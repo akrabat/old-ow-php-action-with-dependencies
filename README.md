@@ -1,8 +1,8 @@
 # OpenWhisk PHP action with Composer dependency
 
-This is an example of a simple OpenWhisk PHP action that has a Composer dependency.
+This is an example of a simple OpenWhisk Docker action that uses PHP internally with a Composer dependency. Nowadays though, it's easier to use the built-in [PHP support][1].
 
-It creates a [docker action][1], which has a `router.php` to respond to the 
+It creates a [docker action][2], which has a `router.php` to respond to the 
 OpenWhisk invocation API calls and a `src/action.php` which contains the PHP function
 to execute.
 
@@ -70,4 +70,5 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
 
-[1]: https://github.com/apache/incubator-openwhisk/blob/master/docs/actions.md#creating-docker-actions
+[1]: https://github.com/apache/incubator-openwhisk/blob/master/docs/actions.md#creating-php-actions
+[2]: https://github.com/apache/incubator-openwhisk/blob/master/docs/actions.md#creating-docker-actions
